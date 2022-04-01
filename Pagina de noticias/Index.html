@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/Portal01/css/portal01.css">
+    <link rel="stylesheet" href="/Portal01/css/Normalize.css">
+    <script type="text/javascript" src="./js/script.js"></script>
+    <!--Fontes-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mochiy+Pop+P+One&display=swap" rel="stylesheet">
+    <!--Fontes-->
+    <title>Portal de noticias</title>
+</head>
+<body>    
+    <!--div class="position1"-->
+        <div class="topo">
+            <div class="topoint">
+                <div class="topoleft">
+                    <ul>
+                        <li><a href="">Home</a></li>
+                        <li><a href="">Quem somos</a></li>
+                        <li><a href="">Anuncie aqui</a></li>
+                        <li><a href="">Contato</a></li>
+                </div>
+                <div class="toporight">
+                    <input type="image" src="./images/lupa.png" border="0" width="26px" height="26px"/>
+                    <input type="text" name="busca" class="topobusca" placeholder="Busca...">        
+                    <a href=""><img src="./images/whatsapp.png" border="0" width="26px" height="26px"></a>
+                    <a href=""><img src="./images/instagram.png" border="0" width="26px" height="26px"></a>
+                    <a href=""><img src="./images/facebook.png" border="0" width="26px" height="26px"></a>
+                    <a href=""><img src="./images/twitter.png" border="0" width="26px" height="26px"></a>
+                    <a href=""><img src="./images/gmail.png" border="0" width="26px" height="26px"></a>                              
+                </div>
+            </div>       
+        </div>
+        <div class="topo2">
+            <div class="topo2int">
+                <div class="logo">
+                    <img src="./images/megaportal.png" alt="" border="0" width="230px" height="90px">
+                </div>
+                <div class="banner">
+                    <P>PUBLICIDADE...</P>
+                </div>
+            </div>
+
+        </div>
+        <div class="menu">
+            <div class="menuint">
+                <img class="menu-mobile" onclick="toggleMenu()" src="./images/barra-de-menu.png" border="0" width="40px" height="40px">
+                <ul id="menu">
+                    <li><a href="">Home</a></li>
+                    <li><a href="">Economia</a></li>
+                    <li>
+                        <a href="">Entretenimento</a>
+                        <img src="./images/arrowdown.png" border="0" width="10px" height="10px">
+                        <div class="submenu">
+                            <ul class="submenuitem">
+                                <li><a href="./">Submenu1</a></li>
+                                <li><a href="./">Submenu2</a></li>
+                                <li><a href="./">Submenu3</a></li>
+                                <li><a href="./">Submenu4</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="">Esportes</a>
+                        <img src="./images/arrowdown.png" border="0" width="10px" height="10px">
+                        <div class="submenu">
+                            <ul class="submenuitem">
+                                <li><a href="./">Submenu1</a></li>
+                                <li><a href="./">Submenu2</a></li>
+                                <li><a href="./">Submenu3</a></li>
+                                <li><a href="./">Submenu4</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li><a href="">Geral</a></li>
+                    <li>
+                        <a href="">Noticias</a>
+                        <img src="./images/arrowdown.png" border="0" width="10px" height="10px">
+                        <div class="submenu">
+                            <ul class="submenuitem">
+                                <li><a href="./">Submenu1</a></li>
+                                <li><a href="./">Submenu2</a></li>
+                                <li><a href="./">Submenu3</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li><a href="">Politica</a></li>
+                    <li><a href="">Videos</a></li>
+                </ul>
+            </div>
+        </div>
+    <!--/div-->
+    <!--div class="position2"-->
+        <div class="ultimas">
+            <div class="ultimasint">
+                <div class="ultimasarea">
+                    <div class="ultimatitulo">ÚLTIMAS NOTICIAS</div>
+                    <div class="ultimaconteudo">Aqui mostramos as ultimas noticias do momento</div>
+                </div>
+            </div>
+        
+        
+        
+        </div>
+        <div class="container">
+            <div class="containerint">
+                <div class="leftside">
+                    <div class="slideshow" id="slideshow">
+                        <div class="slideshowarea">
+                            <a href="http://www.google.com.br">
+                                <div class="slide" style="background-image: url('https://i.ytimg.com/vi/3hxMSZP9tjI/maxresdefault.jpg');">
+                                    <div class="slideinfo">
+                                        <div class="slideinfo_titulo">Titulo da noticia</div>
+                                        <div class="slideinfo_subtitulo">Conteudo do titulo da noticia</div>
+                                    </div>
+                                </div>
+                            </a>
+                            <a href="http://www.google.com.br">
+                                <div class="slide" style="background-image: url('https://imagens.ebc.com.br/5lvfTVxZjwT8SMRDTytJ6QJCTOs=/340x170/smart/https://memoria.ebc.com.br/sites/_portalebc2014/files/atoms_image/identidade_visual_brasil_em_dia.png');">
+                                    <div class="slideinfo">
+                                        <div class="slideinfo_titulo">Titulo da noticia</div>
+                                        <div class="slideinfo_subtitulo">Conteudo do titulo da noticia</div>
+                                    </div>
+                                </div>
+                            </a>
+                            <a href="http://www.google.com.br">
+                                <div class="slide" style="background-image: url('data:image/jpeg;base64,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');">
+                                    <div class="slideinfo">
+                                        <div class="slideinfo_titulo">Titulo da noticia</div>
+                                        <div class="slideinfo_subtitulo">Conteudo do titulo da noticia</div>
+                                    </div>
+                                </div>
+                            </a>
+                            <a href="http://www.google.com.br">
+                                <div class="slide" style="background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTL6vEpdgqEUFGc3FA65c_RdcDoft4c7C-erw&usqp=CAU');">
+                                    <div class="slideinfo">
+                                        <div class="slideinfo_titulo">Titulo da noticia</div>
+                                        <div class="slideinfo_subtitulo">Conteudo do titulo da noticia</div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="widget">
+                        <div class="widget_titulo">Noticias</div>
+                        <div class="widget_conteudo">
+                            <div class="noticia1">
+                                <div class="noticiabig">
+                                    <a href="https://www.maisgoias.com.br/saiba-quando-os-nomes-dos-participantes-do-bbb-22-serao-divulgados/">
+                                        <div class="noticiaimg">
+                                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTMcnzPPkwQcvZOe9iFybQZqvA5nk7xJLqNfA&usqp=CAU" border="0" width="80px" height="80px">
+                                        </div>
+                                        <div class="noticiatitulo">Titulo da noticia Titulo da noticia Titulo da noticia Titulo da noticia</div>
+                                        <div class="noticiainfo">Principais informaçoes e noticias</div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="noticia2">
+                                <div class="noticiaitem">
+                                    <a href="https://modaminasbh.com.br/plus/modulos/noticias/ler.php?cdnoticia=185">
+                                        <div class="noticiaimg">
+                                            <img src="data:image/jpeg;base64,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" border="0" width="80px" height="80px">
+                                        </div>
+                                        <div class="noticiatitulo">Moda</div>
+                                        <div class="noticiainfo">Principais informaçoes e noticias</div>
+                                    </a>
+                                </div>
+                                <div class="noticiaitem">
+                                    <a href="https://www.redenoticia.com.br/noticia/2021/bbb-21-ultimas-noticias/202039">
+                                        <div class="noticiaimg">
+                                            <img src="https://www.redenoticia.com.br/noticia/imagens/BBB-votacao-enquete-noticias-novidades.jpg" border="0" width="80px" height="80px">
+                                        </div>
+                                        <div class="noticiatitulo">BBB</div>
+                                        <div class="noticiainfo">Principais informaçoes e noticias</div>
+                                    </a>
+                                </div>
+                                <div class="noticiaitem">
+                                    <a href="https://mobile.twitter.com/futbolenoticias">
+                                        <div class="noticiaimg">
+                                            <img src="https://pbs.twimg.com/profile_images/1273841625710702592/PEAFO7cZ_400x400.jpg" border="0" width="80px" height="80px">
+                                        </div>
+                                        <div class="noticiatitulo">Futebol</div>
+                                        <div class="noticiainfo">Principais informaçoes e noticias</div>
+                                    </a>
+                                </div>
+                                <div class="noticiaitem">
+                                    <a href="https://egonoticias.com/produto/comida-vegetariana-e-culinaria/">
+                                        <div class="noticiaimg">
+                                            <img src="https://egonoticias.com/wp-content/uploads/2020/09/Comida-Vegetariana-e-Culinaria-2d-300x480.png" border="0" width="80px" height="80px">
+                                        </div>
+                                        <div class="noticiatitulo">CULINARIA</div>
+                                        <div class="noticiainfo">Principais informaçoes e noticias</div>
+                                    </a>
+                                </div>                         
+                            </div>
+                            <div style="clear: both;"></div>
+                        </div>   
+                    </div>
+                    <div class="widget">
+                        <div class="widget_titulo">Esporte</div>
+                        <div class="widget_conteudo">
+                            <div class="noticia1">
+                                <div class="noticiabig">
+                                    <a href="https://www.maisgoias.com.br/saiba-quando-os-nomes-dos-participantes-do-bbb-22-serao-divulgados/">
+                                        <div class="noticiaimg">
+                                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTMcnzPPkwQcvZOe9iFybQZqvA5nk7xJLqNfA&usqp=CAU" border="0" width="80px" height="80px">
+                                        </div>
+                                        <div class="noticiatitulo">Titulo da noticia Titulo da noticia Titulo da noticia Titulo da noticia</div>
+                                        <div class="noticiainfo">Principais informaçoes e noticias</div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="noticia2">
+                                <div class="noticiaitem">
+                                    <a href="https://modaminasbh.com.br/plus/modulos/noticias/ler.php?cdnoticia=185">
+                                        <div class="noticiaimg">
+                                            <img src="data:image/jpeg;base64,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" border="0" width="80px" height="80px">
+                                        </div>
+                                        <div class="noticiatitulo">Moda</div>
+                                        <div class="noticiainfo">Principais informaçoes e noticias</div>
+                                    </a>
+                                </div>
+                                <div class="noticiaitem">
+                                    <a href="https://www.redenoticia.com.br/noticia/2021/bbb-21-ultimas-noticias/202039">
+                                        <div class="noticiaimg">
+                                            <img src="https://www.redenoticia.com.br/noticia/imagens/BBB-votacao-enquete-noticias-novidades.jpg" border="0" width="80px" height="80px">
+                                        </div>
+                                        <div class="noticiatitulo">BBB</div>
+                                        <div class="noticiainfo">Principais informaçoes e noticias</div>
+                                    </a>
+                                </div>
+                                <div class="noticiaitem">
+                                    <a href="https://mobile.twitter.com/futbolenoticias">
+                                        <div class="noticiaimg">
+                                            <img src="https://pbs.twimg.com/profile_images/1273841625710702592/PEAFO7cZ_400x400.jpg" border="0" width="80px" height="80px">
+                                        </div>
+                                        <div class="noticiatitulo">Futebol</div>
+                                        <div class="noticiainfo">Principais informaçoes e noticias</div>
+                                    </a>
+                                </div>
+                                <div class="noticiaitem">
+                                    <a href="https://egonoticias.com/produto/comida-vegetariana-e-culinaria/">
+                                        <div class="noticiaimg">
+                                            <img src="https://egonoticias.com/wp-content/uploads/2020/09/Comida-Vegetariana-e-Culinaria-2d-300x480.png" border="0" width="80px" height="80px">
+                                        </div>
+                                        <div class="noticiatitulo">CULINARIA</div>
+                                        <div class="noticiainfo">Principais informaçoes e noticias</div>
+                                    </a>
+                                </div>                         
+                            </div>
+                            <div style="clear: both;"></div>
+                        </div>   
+                    </div>
+                </div>
+                <div class="rightside">
+                    <div class="widget">
+                        <div class="widget_titulo">Redes Sociais</div>
+                        <div class="widget_conteudo"> 
+                            <a href=""><img src="./images/whatsapp.png" border="0" width="26px" height="26px"></a>
+                            <a href=""><img src="./images/instagram.png" border="0" width="26px" height="26px"></a>
+                            <a href=""><img src="./images/facebook.png" border="0" width="26px" height="26px"></a>
+                            <a href=""><img src="./images/twitter.png" border="0" width="26px" height="26px"></a>
+                            <a href=""><img src="./images/gmail.png" border="0" width="26px" height="26px"></a> 
+                        </div>   
+                    </div>
+                    <div class="widget">
+                        <div class="widget_titulo">Ultimas noticias</div>
+                        <div class="widget_conteudo">
+                            <div class="widget_noticias">
+                                <a href="https://twitter.com/UltimasBrasil/status/1445143534718312454?cxt=HHwWjICzxeuYl44oAAAA">
+                                    Após seis horas fora do ar, internautas relatam retorno gradual e com lentidão das redes Facebook, Whatsapp e Instagram.
+                                </a>
+                            </div>
+                            <div class="widget_noticias">
+                                <a class="widget_noticias" href="https://twitter.com/UltimasBrasil/status/1351934776442290176?cxt=HHwWgIC41YXhhMMlAAAA">
+                                Joe Biden presta o juramento e se torna o 46⁰ presidente dos Estados Unidos
+                                </a>
+                            </div>
+                            <div class="widget_noticias">
+                                <a class="widget_noticias" href="https://twitter.com/UltimasBrasil/status/1350811219805007872?cxt=HHwWgMC3sbjphb8lAAAA">
+                                URGENTE: Apresentação da área técnica da Anvisa confirma que a eficácia da Coronavac é de 50,34%.
+                                </a>
+                            </div>
+                            <div class="widget_noticias">
+                                <a class="widget_noticias" href="https://twitter.com/UltimasBrasil/status/1290693880405532677?cxt=HHwWioC99d3Pu-kjAAAA">
+                                Ministro da Saúde do Líbano: dez pessoas morreram e dezenas ficaram feridas na explosão ocorrida em Beirute. – BBC
+                                </a>
+                            </div>
+                            <div class="widget_noticias">
+                                <a class="widget_noticias" href="https://twitter.com/UltimasBrasil/status/1290679210319794176?cxt=HHwWgMC-oen5tOkjAAAA">
+                                Vídeo mostra fogos de artifício explodindo individualmente antes da grande explosão que atingiu Beirute nesta terça-feira.
+                                </a>
+                            </div>
+                        </div>   
+                    </div>
+                    <div class="widget">
+                        <div class="widget_titulo">Publicidade</div>
+                        <div class="widget_conteudo">
+                            <img src="./images/publicidade.jpeg" border="0" width="260px">
+                        </div>   
+                    </div>
+                    <div class="widget">
+                        <div class="widget_titulo">Encontre-nos no Facebook</div>
+                        <div class="widget_conteudo">
+                            <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Ffacebook&tabs&width=340&height=70&small_header=true&adapt_container_width=true&hide_cover=false&show_facepile=true&appId" width="260" height="70" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+                        </div>   
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="rodape">
+            <div class="toporight">
+                <input type="image" src="./images/lupa.png" border="0" width="26px" height="26px"/>
+                <input type="text" name="busca" class="topobusca" placeholder="Busca...">        
+                <a href=""><img src="./images/whatsapp.png" border="0" width="26px" height="26px"></a>
+                <a href=""><img src="./images/instagram.png" border="0" width="26px" height="26px"></a>
+                <a href=""><img src="./images/facebook.png" border="0" width="26px" height="26px"></a>
+                <a href=""><img src="./images/twitter.png" border="0" width="26px" height="26px"></a>
+                <a href=""><img src="./images/gmail.png" border="0" width="26px" height="26px"></a>                              
+            </div>
+        </div>
+    <!--/div-->
+</body>
+</html>

@@ -1,0 +1,473 @@
+body{
+    font-size: 12px;
+    font-family: 'Mochiy Pop P One', sans-serif;
+    /*font-family: helvetica;*/
+}
+.topo{
+    height: 30px;
+    background-color: black;
+}
+.topoint{
+    width: 100%;
+    max-width: 1040px;
+    height: 30px;
+    margin: auto;
+}
+.topoleft{
+    width: 50%;
+    height: 30px;
+    float: left;
+}
+.topoleft ul {
+    margin: 0;
+    padding: 0;
+    list-style: none; /*Tira os pontos da lista*/   
+}
+.topoleft li{
+    float: left;
+    margin-right: 8px;
+    margin-left: 8px;
+    line-height: 30px;/*Altura da linha*/   
+}
+.topoleft li a {
+    text-decoration: none;
+    color: white;
+}
+.topoleft li a:hover{
+    font-size: 13px;
+    font-weight: bold;
+}
+.topoleft li a:active{
+    color: blue;
+    font-size: 15px;
+    font-weight: bold;
+}
+.toporight{
+    width: 50%;
+    height: 28px;
+    float: right;
+    text-align: right;
+    margin-top: 2px;
+}
+.topobusca{
+    width: 110px;
+    height: 20px;
+    outline: 0;
+}
+.toporight a {
+    float: right;
+    margin-left: 3px;
+    margin-right: 3px;
+}
+.toporight input{
+    float: right;
+}
+.topo2{
+    height: 100px;
+    background-color: white;
+}
+.topo2int{
+    width: 100%;
+    max-width: 1040px;
+    height: 95px;
+    margin: auto;
+}
+.logo{
+    width: 230px;
+    height: 95px;
+    float: left;
+    margin-top: 5px;
+}
+@keyframes banner{
+    0%{color:white;}
+    50%{color:red}
+    100%{color: white;}
+}
+.banner p{
+    color: white;
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+    font-family: 'Mochiy Pop P One', sans-serif;
+    animation-name: banner;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+}
+.topo2 .banner{
+    width: 650px;
+    height: 80px;
+    float: right;
+    margin-top: 7px;
+    background-color:red;
+}
+.menu{
+    height: 40px;
+    width: 100%;
+    background-color: red;
+}
+.menuint{
+    width: 100%;
+    height: 40px;
+    max-width: 1040px;
+    margin:auto;
+}
+.menuint ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.menuint li {
+    float: left;
+    height: 40px;
+    line-height: 40px;
+    padding-left: 8px;
+    padding-right: 8px;    
+}
+.menu li:hover .submenu{
+    display: block;
+}
+.menu a{
+    text-decoration: none;
+    color: white;
+}
+.submenu{
+    width: 150px;
+    background-color: red;
+    position: absolute;
+    display: none;
+}
+.submenuitem li{
+    width: 150px;
+    height: 30px;
+    line-height: 30px;
+}
+.menuint li:hover, .submenuitem li:hover{
+    background-color: #FF5555;
+}
+.ultimas{
+    height: 40px;
+}
+.ultimasint{
+    width: 100%;
+    max-width: 1040px;
+    height: 40px;
+    margin: auto;
+}
+.ultimasarea{
+    height: 28px;
+    background-color: white;
+    border: 1px solid black;
+    margin-top: 10px;
+}
+.ultimatitulo{
+    background-color: red;
+    color: white;
+    height: 28px;
+    line-height: 28px;
+    display: inline-block;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: 16px;
+}
+.ultimaconteudo{
+    color: black;
+    height: 28px;
+    line-height: 28px;
+    display: inline-block;
+    padding-left: 10px;
+}
+.containerint{
+    width: 100%;
+    max-width: 1040px;
+    margin: auto;
+    background-color: black;
+}
+.rightside{
+    width: 275px;
+    min-height: 200px;
+    float: right;
+    /*background-color: yellow;*/
+    margin-left: 12px;
+}
+.leftside{
+    width: 753px;
+    float: left;
+}
+.widget{
+    border:1px solid black;
+    background-color: #FFF;
+    margin-bottom: 10px;
+}
+.widget_titulo{
+    text-align: center;
+    height: 30px;
+    line-height: 30px;
+    background-color: #ddd;
+    border-bottom: 1px solid black;
+}
+.widget_conteudo{
+    text-align: center;
+    padding: 5px;
+}
+.widget_noticias{
+    text-align: left;
+    margin: 0px 10px;
+    padding: 10px 0px;
+}
+.widget_noticias a:hover{
+    text-decoration: underline;
+}
+.widget_noticias a{
+    text-decoration: none;
+    color: black;
+}
+.slideshow{
+    height: 335px;
+    overflow: hidden; /*define o que fazer com conteudo que passar do area da div, hidden=esconder */
+    margin-bottom: 20px;
+}
+.slideshowarea{
+    height: 335px;
+    transition: all 3s;
+
+}
+.slide{
+    height: 335px;
+    float: left;
+    background-repeat: no-repeat;
+    background-position:center;
+    background-size: cover;/*cobre toda a area de imagem*/
+}
+.slideinfo{
+    height: 70px;
+    margin-top: 280px;
+    background-color: red;
+    background: linear-gradient(30deg red, yellow);
+    width: 500px;
+    height: 300px;  
+}
+.slideinfo_titulo{
+    color: white;
+    font-size: 20px;
+    padding-top: 10px;
+}
+.slideinfo_subtitulo{
+    color: white;
+    font-size: 15px;
+}
+.noticia1{
+    width: 420px;
+    height: 420px;
+    float: left;
+}
+.noticia2{
+    width: 320px;
+    height: 420px;
+    float: right;
+}
+.noticiaitem{
+    text-align: left;
+    height: 90px;
+    margin-top: 7px;
+    margin-bottom: 7px;
+}
+.noticiaimg{
+    width: 80px;
+    height: 80px;
+    border: 1px solid black;
+    padding: 3px;
+    float: left;
+}
+.noticiatitulo{
+    float: left;
+    margin-left: 6px;
+    font-size: 15px;
+    width: 220px;
+    color: black;
+}
+.noticiainfo{
+    font-size: 12px;
+    margin-left: 6px;
+    color: #999;
+    float: left;
+}
+.noticiabig{
+    margin: 7px;
+}
+.noticiabig .noticiaimg{
+    width: 400px;
+    height: 220px;
+}
+.noticiabig .noticiaimg img{
+    width: 400px;
+    height: 220px;
+}
+.noticiabig .noticiatitulo{
+    font-size: 30px;
+    width: 400px;
+    text-align: left;
+}
+.menu-mobile{
+    display: none;
+}
+.position1{
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+}
+.position2{
+    margin-top: 180px; 
+}
+/*RESPONSIVIDADE*/
+
+/*TELAS GRANDES*/
+@media only screen and (min-width:902px) and (max-width:1057px) {
+    .topoin,
+    .containerint,
+    .ultimasin,
+    .menuin,
+    .topoin,
+    .menu,
+    .topo2 {
+        max-width: 890px;
+    }
+    .leftside{
+        width: 600px;
+    }
+    .noticiabig .noticiaimg{
+        width: 238px;
+    }
+    .noticiabig .noticiaimg img{
+        width: 238px;
+    }
+    .noticiabig .noticiatitulo{
+        width: 238px;
+    }
+    .noticia1 {
+        width: 268px;
+    } 
+}
+
+/*TABLET*/
+@media only screen and (min-width:774px) and (max-width:902px){
+    .topoin,
+    .containerint,
+    .ultimasin,
+    .menuin,
+    .topoin,
+    .menu,
+    .topo2 {
+        max-width: 768px;
+    }
+    #menu{
+        display: block !important; /*Vai sobreescrever qualquer outra propriedade*/
+    }
+    .topo2 .banner{
+        display: none; /*Esconde o banner porque não cabe mais na tela*/
+    }
+    .logo{
+        float: none; /*tira o float da logo*/
+        margin: auto;/*coloca a logo centratilizada*/
+    }
+    .rightside{
+        display: none;
+    }
+    .leftside{
+        float: none;
+        width: auto;
+    }
+    .noticiabig .noticiaimg{
+        width: 390px;
+    }
+    .noticiabig .noticiaimg img{
+        width: 390px;
+    }
+    .noticiabig .noticiatitulo{
+        width: 400px;
+    }
+    .noticia1 {
+        width: 426px;
+    } 
+}
+/*CELULAR*/
+@media only screen and (max-width:773px){
+    .topoin,
+    .containerint,
+    .ultimasin,
+    .menuin,
+    .topoin,
+    .menu,
+    .topo2 {
+        max-width: 320px;
+    }
+    .topoleft{
+        display: none;
+    }
+    .toporight{
+        width: 100%;
+    }
+    .topo2 .banner{
+        display: none; /*Esconde o banner porque não cabe mais na tela*/
+    }
+    .logo{
+        float: none; /*tira o float da logo*/
+        margin: auto;/*coloca a logo centratilizada*/
+    }
+    .menuint{
+        width: auto;
+    }
+    .menu ul {
+        position: absolute;
+        background-color: red;
+        display: none;
+    }
+    .menu li {
+        float: none;
+        height: auto;
+    }
+    .menu li img{
+        display: none;
+    }
+    .submenu{
+        position: static;
+        display: block;
+    }
+    .menu-mobile{
+        display: block;
+    }
+    .ultimas{
+        display: none;
+    }
+    .rightside{
+        display: none;
+    }
+    .leftside{
+        margin-top:10px;
+        float: none;
+        width: auto;
+    }
+    .noticiabig .noticiaimg{
+        width: 290px;
+    }
+    .noticiabig .noticiaimg img{
+        width: 290px;
+    }
+    .noticiabig .noticiatitulo{
+        width: 300px;
+    }
+    .noticia1 {
+        width: 426px;
+        height: auto;
+    } 
+    .noticia2{
+        width: 300px;
+        padding-top: 20px;
+    }
+    .noticiatitulo{
+        width: 200px;
+    }
+    .noticiainfo{
+        font-size: 10px;
+    }
+}
