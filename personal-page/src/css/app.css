@@ -1,1 +1,6 @@
 /* app global css */
+body{
+  background-color: black;
+  /* font-family: 'Ubuntu Mono', monospace; */
+  font-family: 'Source Code Pro', monospace;
+}

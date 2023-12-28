@@ -1,8 +1,8 @@
 <template>
   <div>
     <home-page-component></home-page-component>
-    <contato-component></contato-component>
-    <carreira-profissional-component></carreira-profissional-component>
+    <!-- <contato-component></contato-component>
+    <carreira-profissional-component></carreira-profissional-component> -->
   </div>
 </template>
 
