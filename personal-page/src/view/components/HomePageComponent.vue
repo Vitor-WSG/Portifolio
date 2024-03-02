@@ -1,95 +1,57 @@
 <template>
-  <div class="row justify-evenly q-my-xl">
-    <div class="col-6">
-      <h2 class="text-brown-3">Vitor W. S. Gomes</h2>
-      <h4 class="texto-animado text-brown-8">><span></span></h4>
-      <p class="text-brown-2">
-        Tenho cursos complementares nas áres de desenvolvimento Front End (
-        HTML5, CSS3, JavaScript, Vue JS, Quasar,Swagger,Postman ) já trabalhei
-        com tecnologias voltadas para banco de dados (SQL,Postgresql,MySQL), e
-        cultura Devops ( Ansible, Docker). Atualmente atuo como desenvolvedor
-        Front-end utilizando JavaScript junto com a Framework Vue JS.
-      </p>
+  <div style="display: flex; height: 800px" class="row">
+    <!-- lado esquerdo -->
+    <div style="background-color: black; color: white" class="col-8">
+      <div style="display: flex" class="justify-start q-ml-lg">
+        <barra-menu-component></barra-menu-component>
+      </div>
+
+      <div style="display: flex" class="row q-gutter-md q-ml-md">
+        <div class="col-8">
+          <h2>
+            <span>Desenvolvedor</span>
+            <br />
+            <span>Fron End</span>
+          </h2>
+        </div>
+        <div class="col-8">
+          <h6>
+            Olá, meu nome é Vitor Gomes, sou graduado em Engenharia Elétrica, e
+            Análise de Desenvolvimento de Sistemas. Atualmente atuo como
+            desenvolvedor <span style="color:yellow">JavaScript</span>, com <span style="color:#2f74c0">TypeScript</span>. Minha
+            especialidade é desenvolvimento front end, com <span style="color:#42b884">VueJs</span><br /><br />
+            Navegue pelo meu site para saber mais sobre mim ... Have a fun !
+          </h6>
+        </div>
+      </div>
     </div>
-    <div class="col-6">
-      <q-img
-        src="https://media.licdn.com/dms/image/D4D03AQHRJYWJl9AwYw/profile-displayphoto-shrink_800_800/0/1667331409116?e=1709164800&v=beta&t=20W670Iry4gOEayAQ-QnJyKZ4vCCVnNpyfYgA3jHZzI"
-      />
+
+    <!-- lado direito -->
+    <div style="background-color: grey; color: black" class="col-4">
+      <div>
+        <contato-component></contato-component>
+      </div>
+      <div
+        style="
+          border: 1px white;
+          width: 400px;
+          height: 400px;
+          position: absolute;
+          right: 20%;
+          top: 20%;
+        "
+      >
+        <q-img
+          src="../../assets/images/fotoPerfil.jpeg"
+          :ratio="1"
+          class="col-1"
+        />
+      </div>
     </div>
   </div>
 </template>
 
-<script>
-export default {};
+<script setup lang="ts">
+import BarraMenuComponent from './BarraMenuComponent.vue';
+import ContatoComponent from './ContatoComponent.vue';
 </script>
-
-<style scoped>
-.texto-animado {
-  font-size: 40px;
-  color: white;
-}
-
-.texto-animado span {
-  position: relative;
-}
-
-.texto-animado span::before {
-  content: '';
-  color: brown;
-  animation: palavras 25s infinite;
-}
-
-.texto-animado span::after {
-  content: '';
-  position: absolute;
-  height: 100%;
-  border-left: 2px solid brown;
-  right: -10px;
-  animation: cursor 0.8s infinite, digitando 25s steps(15) infinite;
-  width: calc(100% + 13px);
-  background-color: black;
-}
-
-@keyframes digitando {
-  10%,
-  15%,
-  30%,
-  35%,
-  50%,
-  70%,
-  90%,
-  95% {
-    width: 0;
-  }
-  5%,
-  20%,
-  40%,
-  60%,
-  65%,
-  80%,
-  85% {
-    width: calc(100% + 13px);
-  }
-}
-
-@keyframes cursor {
-  0% {
-    border-left: 2px solid black;
-  }
-}
-
-@keyframes palavras {
-  0%,
-  10% {
-    content: '';
-  }
-  11%,
-  80% {
-    content: 'Desenvolvedor Front End';
-  }
-  81%,
-  100% {
-    content: '';
-  }
-}
-</style>

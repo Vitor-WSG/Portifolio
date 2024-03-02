@@ -1,13 +1,6 @@
 <template>
-  <q-btn>TESTE</q-btn>
+  <div class="row q-gutter-lg justify-center q-my-lg"></div>
 </template>
 
-<script>
-export default {
-
-}
+<script setup lang="ts">
 </script>
-
-<style>
-
-</style>
